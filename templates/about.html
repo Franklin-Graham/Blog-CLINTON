@@ -1,0 +1,110 @@
+{% load static %}
+<div class="container text">
+<!--<h7>IT'S ME</h7> -->
+    {% for i in object_1 %}
+<br>
+<center>
+<h5 class="name">C͡ℓ𝖏ήtø𝐧 ᗩ𝔟ⓡ𝐚ꫝαＭ</h5>
+</center>
+<br>
+</div>
+<center>
+<a href="#about" class="btn btn-danger btn-sm know_more">Know More</a>
+</center>
+<br>
+<br>
+<center>
+<h7 class="user">1:00 ●━━━━━━─────── 2:00<br>⇆ ◁ㅤ ❚❚ㅤ ▷  ↻</h7>
+</center>
+<br>
+<br>
+
+<div class="card card_dec">
+  <div class="card-body quotes">
+    <p>{{i.quotes}}</p>
+  </div>
+</div>
+<br>
+<hr>
+<center>
+{% for y in object_4 %}
+
+<div class="card account_card" style="width:12rem;">
+<div class="card-body account_link">
+    <div class="col-12 col-sm-12 col-md-4 xol-lg-4">
+    <a href="{{y.Github}}"><i style="font-size:2em;color:black;" class="fab fa-github"></i></a>
+    <a href="{{y.Telegram}}"><i style="font-size:2em;color:black;" class="fab fa-telegram"></i></a>
+    <a href="{{y.Facebook}}"><i style="font-size:2em;color:black;" class="fab fa-facebook"></i></a>
+    <a href="{{y.Twitter}}"><i style="font-size:2em;color:black;" class="fab fa-twitter-square"></i></a>
+    </div>
+</div>
+</div>
+    {% endfor %}
+</center>
+<hr>
+
+<div class="card shadow-lg p-3 mb-5 bg-body rounded a_dec" id="about">
+  <div class="card-body about_me">
+<h4 class="heading_text">About Me</h4>
+<p class="paragraph_text">{{i.About}}</p>
+      {% for i in object_5 %}
+Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.url}}">Download</a>
+      {% endfor %}
+  </div>
+</div>
+
+
+<div class="card shadow-sm p-3 mb-5 bg-body rounded card_slide" id="project"">
+    <div class="card-body">
+<h4 class="heading_text"><i class="fab fa-telegram"></i> Telegram Bots</h4>
+        {% for x in object_2 %}
+    <div class="card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text">
+<!--     <img class="tele_icon" src="{{x.Telegram_icon.url}}" alt="" width="60px" height="60px" style="margin-left:15px"><a style="text-decoration:none;margin-left:15px;font-size:17px;text-align:justify;color:black;"><span> {{x.Telegram_bot}}</span></a> -->
+      <i class="fab fa-android"></i> <a style="text-decoration:none;margin-left:15px;font-size:17px;text-align:justify;color:black;" href="https://t.me/{{x.Telegram_bot}}"><span> {{x.Telegram_bot}}</span></a>
+    <div class="col-12 col-sm-12 col-md-12 xol-lg-12" style="margin-left:250px;margin-top:-20px;">
+    <a href="https://t.me/{{x.Telegram_bot}}"><button style="margin:auto;" class="btn btn-outline-info btn-sm tele_btn">Get</button></a> 
+    </div>
+    </div>
+        {% endfor %}
+    </div>
+</div>
+    <hr>
+
+<div class="container">
+    <h4>Support</h4>
+<div class="Dropdown">
+<button id="Dropdown-Button" class="btn btn-dark btn-sm">Buy me a coffee <i class="fas fa-coffee"></i></button>
+    <div class="Dropdown-Menu">
+        <span class="upi">UPI: {{i.your_upi}}</span>
+    </div>
+</div>
+</div>
+<hr>
+
+
+<div class="card shadow-sm p-3 mb-5 bg-body rounded">
+<h4 class="heading_text"><i class="fab fa-github-square"></i> GitHub</h4>
+    {% for z in object_3 %}
+    <div class=" card-body shadow-lg p-3 mb-5 bg-body rounded paragraph_text">
+       <i class="fab fa-github-alt"></i> <a style="text-decoration:none;margin-left:25px;font-size:15px;text-align:justify;color:black;">{{z.Repository_name}}</a>
+    <div class="col-3 col-sm-12 col-md-12 xol-lg-12">
+     <a href="https://github.com/Clinton-Abraham/{{z.Repository_name}}"><button class="btn btn-outline-info btn-sm git_btn">Source</button></a>
+    </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="card shadow-lg p-3 mb-5 bg-body rounded" id="contact">
+    <div class="card-body card_contact">
+    <h4 class="heading_text">Contact <i class="fas fa-address-book"></i></h4>
+    <h7>Mobile: {{i.contact_1}} </h7><br>
+    <h7>Mobile: {{i.contact_2}}</h7><br>
+    <h7><i class="fab fa-whatsapp"></i> Whatsapp: {{i.whatsapp}}</h7><br><br>
+    <h4>Lives in <i class="fas fa-globe-africa"></i></h4>
+    <h7>Tamil Nadu, India</h7>
+    </div>
+</div>
+
+{% endfor %}
+

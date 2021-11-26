@@ -1,0 +1,216 @@
+body, html{
+scroll-behavior:smooth;
+overflow-x:hidden;
+background-color:#F8F8F8;
+}
+*{
+background-color:;
+}
+.header_img{
+background-color:#F8F8F8;
+}
+
+/*.logo{*/
+/*margin-top:0;*/
+/*}*/
+.name{
+font-family:simplifica;
+font-size:30px;
+font-weight:bold;
+background-color:;
+letter-spacing:.1em;
+}
+
+.user{
+background-color:;
+font-size:16px;
+text-align:justify;
+}
+.heading_text{
+font-size:28px;
+font-family:simplifica;
+}
+.paragraph_text{
+font-size:16px;
+letter-spacing.2em;
+text-align:justify;
+background-color:#F8F8F8;
+}
+
+.text{
+text-align:justify;
+letter-spacing:.2em;
+font-family:sans-serif;
+background-color:#F8F8F8;
+}
+.know_more{
+margin-left:0px;
+border:1px solid #3C1874;
+border-radius:25px;
+box-shadow:1px 3px #888888;
+}
+.know_more:hover{
+background-color:blue;
+}
+.quotes{
+font-family:cursive;
+text-align:center;
+font-weight:bold;
+background-color:#F8F8F8;
+border:1px #3C1874;
+border-radius:25px;
+}
+.account_card{
+margin-left:0;
+border:2px solid;
+border-radius:25px;
+box-shadow:2px 3px #888888;
+}
+.account_link{
+background-color:;}
+.about_me{
+background-color:#F8F8F8;
+border:1px #3C1874;
+border-radius:25px;
+}
+.card_dec{
+border:1px solid #3C1874;
+border-radius:25px;
+}
+.a_dec{
+border:1px solid #3C1874;
+border-radius:25px;
+}
+
+.shadow-lg p-3 mb-5 bg-body rounded{
+border:1px solid #3C1874;
+border-radius:25px;
+}
+.card_contact{
+text-align:center;
+}
+
+.Dropdown{
+display:block;
+}
+#Dropdown-Button{
+position:relative;
+display:block;
+border-radius:25px;
+}
+.Dropdown-Menu{
+display:none;
+margin-top:10px;
+position:relative;
+}
+.Dropdown:hover .Dropdown-Menu{
+display:flex;
+position:relative;
+}
+
+.tele_icon{
+border-radius:50%
+}
+.upi{
+margin-left:20px;
+}
+/*** link ***/
+.tele_link{
+text-decoration:none;
+margin-left:20px;
+font-size:19px;
+}
+.header_image{
+background-color:#F8F8F8;
+}
+
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration:none;
+    font-size: 22px;
+    font-family: monospace;
+    font-weight:bold;
+    letter-spacing: ;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+/*.brand_name{*/
+/*animation-name:example;*/
+/*animation-duration:7s;*/
+/*}*/
+/*@keyframes example{*/
+/*0%{color:green;}*/
+/*25%{color:red;}*/
+/*50%{color:fuchsia;}*/
+/*75%{color:tomato;}*/
+/*85%{color:blue;}*/
+/*100%{color:pink;}*/
+/*}*/
+.name{
+position:relative;
+animation-name:examples;
+animation-duration:3s;
+animation-direction:reverse;
+}
+@keyframes examples{
+0%{left:0px;top:0px;}
+25%{left:200px;top:0px;}
+50%{left:200px;top:200px;}
+75%{left:0px;top:200px;}
+100%{left:0px;top:0px;}
+}
+.tele_btn{
+/* background-color:red; */
+width:55px;
+border:1px solid #3C1874;
+border-radius:20px;
+box-shadow:1px 2px #888888;
+}
+.tele_btn:hover{
+background-color:green;
+}
+.git_btn{
+/* background-color:None; */
+margin-left:250px;
+margin-top:10px;
+border:1px solid #3C1874;
+border-radius:25px;
+box-shadow:1px 2px #888888;
+}
+.git_btn:hover{
+background-color:green;
+}
+
+/*.card_slide{*/
+/*position:relative;*/
+/*animation-name:exam;*/
+/*animation-duration:3s;*/
+/*}*/
+/*@keyframes exam{*/
+/*0%{left:0px;top:0px;}*/
+/*100%{left:0px;top:40px;}*/
+/*}*/
