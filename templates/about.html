@@ -169,9 +169,13 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
             </form>
         </div>
         <!--Grid column-->
+        {% if messages %}
+        <ul class="messages">
         {% for i in messages %}
-        {{i}}
+        <li {% if i.tags %} class="{{i.tags}}" {% endif %}>{{i}}</li>
         {% endfor %}
+        </ul>
+        {% endif %}
 
     <div class="card-body card_contact">
 <h4>Lives in <i class="fas fa-map-marker-alt fa-1x"></i></h4>
