@@ -167,12 +167,11 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <button class="btn btn-primary" type="submit">send</button>
+<!--                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>-->
             </div>
 
-            {% for i in messages %}
-            {{i.messages}}
-            {% endfor %}
+
             <div class="status"></div>
         </div>
         <!--Grid column-->
