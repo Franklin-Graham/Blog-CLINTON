@@ -158,17 +158,19 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
                         <div class="md-form">
                             <label for="message"></label>
                             <textarea type="text"  name="message" placeholder="Enter your message Here" rows="2" class="form-control md-textarea" required></textarea>
-                        </div>
+                        </div><br>
+
+                        <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit().func();">Send</a>
+            </div>
 
                     </div>
                 </div>
                 <!--Grid row-->
             </form>
-                <br>
 
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit().func();">Send</a>
-            </div>
+
+
  <script>
      function func() {
      alert("message send successfully..");
