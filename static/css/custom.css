@@ -1,20 +1,9 @@
-{% load static %}
 body, html{
 scroll-behavior:smooth;
 overflow-x:hidden;
-/*background-color:#F8F8F8;*/
+background-color:#F8F8F8;
+}
 
-     background: url(static("webapp/images/contact.jpg"));
-     background-repeat: no-repeat;
-     background-size: 100%;
-     background-attachment: fixed;
-}
-.card {
-      box-shadow: 0 0 5px 0 ;
-      background: inherit;
-      backdrop-filter: blur(10px);
-      margin: 30px;
-}
 *{
 background-color:;
 }
@@ -74,12 +63,13 @@ border-radius:25px;
 }
 .account_card{
 margin-left:0;
-border:2px solid;
-border-radius:25px;
+/*border:2px solid;*/
+/*border-radius:25px;*/
 box-shadow:2px 3px #888888;
 }
 .account_link{
-background-color:;}
+background-color:;
+}
 .about_me{
 background-color:#F8F8F8;
 border:1px #3C1874;
