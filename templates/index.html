@@ -20,12 +20,6 @@
 {% include 'nav.html' %}
 {% include 'header.html' %}
 {% include 'about.html' %}
-{% if messages %}
-{% for i in messages %}
-           {{i.messages}}
-{% endfor %}
-            {% endif %}
-
 {% include 'footer.html' %}
 {% block body %}
 {% endblock %}
