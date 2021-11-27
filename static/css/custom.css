@@ -3,6 +3,18 @@ scroll-behavior:smooth;
 overflow-x:hidden;
 background-color:#F8F8F8;
 }
+body {
+     background-image: url('background.jpg');
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-attachment: fixed;
+}
+.card {
+      box-shadow: 0 0 5px 0 ;
+      background: inherit;
+      backdrop-filter: blur(10px);
+      <!--margin: 100px; according to your need-->
+}
 *{
 background-color:;
 }
