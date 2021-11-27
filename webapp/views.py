@@ -18,6 +18,7 @@ def message(request):
         username = request.POST['name']
         userEmail = request.POST['email']
         message = request.POST['message']
+        messages.info(request,"message send")
         msg = Message(username=username,user_mail=userEmail,message=message)
         msg.save()
         return redirect('/')
