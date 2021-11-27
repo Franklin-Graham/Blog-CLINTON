@@ -170,11 +170,12 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
         </div>
         <!--Grid column-->
         {% if messages %}
-        <ul class="messages">
         {% for i in messages %}
-        <li {% if i.tags %} class="{{i.tags}}" {% endif %}>{{i}}</li>
+        <p class="messages" style="color:#9ab973;family-font:sans-serif;">
+        {{i}} <i style="color:#9ab973;" class="fa fa-check" aria-hidden="true"></i>
+        </p>
         {% endfor %}
-        </ul>
+
         {% endif %}
 
     <div class="card-body card_contact">
