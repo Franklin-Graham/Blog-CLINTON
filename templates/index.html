@@ -21,8 +21,11 @@
 {% include 'header.html' %}
 {% include 'about.html' %}
 {% if messages %}
-           {{messages}}
+{% for i in messages %}
+           {{i.messages}}
+{% endfor %}
             {% endif %}
+
 {% include 'footer.html' %}
 {% block body %}
 {% endblock %}
