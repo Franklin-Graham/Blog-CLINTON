@@ -164,19 +164,20 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
                 </div>
                 <!--Grid row--><br>
                 <div class="text-center text-md-left">
-                <button name="contact-form" onclick="func();" class="btn btn-primary" type="submit">send</button>
+                <button onclick='document.getElementById("demo").innerHTML="message send successfully!!";' class="btn btn-primary" type="submit">send</button>
                 </div>
+                <p id="demo"></p>
             </form>
 
 <!--            <div class="text-center text-md-left">-->
 <!--                <button class="btn btn-primary" type="submit">send</button>-->
 <!--                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>-->
 <!--            </div>-->
- <script>
-     function func() {
-     alert("message send successfully..");
-     }
- </script>
+<!-- <script>-->
+<!--     function func() {-->
+<!--     alert("message send successfully");-->
+<!--     }-->
+<!-- </script>-->
             <div class="status"></div>
         </div>
         <!--Grid column-->
