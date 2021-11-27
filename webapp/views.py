@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from . models import Detail,Telegram_project,Github_project,Account,File,Message
 
 
@@ -20,4 +20,5 @@ def message(request):
 
         msg = Message(username=username,user_mail=userEmail,message=message)
         msg.save()
+        return redirect('/')
     return render(request,'index.html')
