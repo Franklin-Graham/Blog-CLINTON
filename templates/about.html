@@ -164,7 +164,7 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
                 </div>
                 <!--Grid row-->
                 <div class="text-center text-md-left">
-                <button onclick="func()" class="btn btn-primary" type="submit">send</button>
+                <button onclick="setTimeout(func, 3000);" class="btn btn-primary" type="submit">send</button>
                 </div>
             </form>
 
@@ -172,10 +172,9 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
 <!--                <button class="btn btn-primary" type="submit">send</button>-->
 <!--                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>-->
 <!--            </div>-->
-
  <script>
      function func() {
-     alert("message send successfully");
+     window.alert("message send successfully..");
      }
  </script>
             <div class="status"></div>
