@@ -131,8 +131,8 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input style="color:black;" type="text" id="name" name="name" class="form-control" required>
                             <label for="name" class="">Your name</label>
+                            <input style="color:black;" type="text" id="name" placeholder="Name" name="name" class="form-control" required>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -140,8 +140,8 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control" required>
                             <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" placeholder="Email id" class="form-control" required>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -156,8 +156,8 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text"  name="message" rows="2" class="form-control md-textarea" required></textarea>
                             <label for="message">Your message</label>
+                            <textarea type="text"  name="message" placeholder="Enter your message Here" rows="2" class="form-control md-textarea" required></textarea>
                         </div>
 
                     </div>
@@ -172,13 +172,11 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
 <!--                <button class="btn btn-primary" type="submit">send</button>-->
 <!--                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>-->
 <!--            </div>-->
- {% if messages %}
  <script>
      function func() {
      alert("message send successfully..");
      }
  </script>
- {% endif %}
             <div class="status"></div>
         </div>
         <!--Grid column-->
