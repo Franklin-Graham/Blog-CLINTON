@@ -17,12 +17,14 @@
     <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
+<div class="container">
 {% include 'nav.html' %}
 {% include 'header.html' %}
 {% include 'about.html' %}
 {% include 'footer.html' %}
 {% block body %}
 {% endblock %}
+</div>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
