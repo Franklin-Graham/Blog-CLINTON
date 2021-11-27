@@ -20,9 +20,9 @@
 {% include 'nav.html' %}
 {% include 'header.html' %}
 {% include 'about.html' %}
-{% for i in messages %}
-          message:  {{i.messages}}
-            {% endfor %}
+{% if messages %}
+           {{messages}}
+            {% endif %}
 {% include 'footer.html' %}
 {% block body %}
 {% endblock %}
