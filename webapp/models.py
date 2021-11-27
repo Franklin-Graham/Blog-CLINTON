@@ -37,3 +37,10 @@ class Account(models.Model):
 
 class File(models.Model):
     resume = models.FileField(upload_to='files')
+
+class Message(models.Model):
+    username = models.CharField(max_length=200)
+    user_mail = models.EmailField(max_length=200)
+    message = models.TextField()
+    def __str__(self):
+        return "message from " + self.username

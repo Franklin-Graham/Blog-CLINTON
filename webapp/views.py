@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from . models import Detail,Telegram_project,Github_project,Account,File
+from . models import Detail,Telegram_project,Github_project,Account,File,Message
 
 
 # Create your views here.
@@ -12,5 +12,12 @@ def fun1(request):
     return render(request,'index.html',{'object_1':obj_1,'object_2':obj_2,'object_3':obj_3,
                                         'object_4':obj_4,'object_5':obj_5})
 
+def message(request):
+    if request.method == "POST":
+        username = request.POST['name']
+        userEmail = request.POST['email']
+        message = request.POST['message']
 
+        save = Message(username=username,user_mail=userEmail,message=message)
+        save.save()
 
