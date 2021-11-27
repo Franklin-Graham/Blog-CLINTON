@@ -7,7 +7,6 @@ class Detail(models.Model):
     info = models.TextField()
     About = models.TextField()
     quotes = models.TextField()
-    document = models.FileField(upload_to='documents')
     logo_image = models.ImageField(upload_to='pics')
     your_upi = models.CharField(max_length=250)
     contact_1 = models.CharField(max_length=250)
