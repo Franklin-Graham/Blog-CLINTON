@@ -4,7 +4,7 @@ overflow-x:hidden;
 background-color:#F8F8F8;
 }
 body {
-     background-image: url('background.jpg');
+     background-image: url('contact.jpg');
      background-repeat: no-repeat;
      background-size: 100%;
      background-attachment: fixed;
@@ -13,7 +13,7 @@ body {
       box-shadow: 0 0 5px 0 ;
       background: inherit;
       backdrop-filter: blur(10px);
-      <!--margin: 100px; according to your need-->
+      margin: 400px;
 }
 *{
 background-color:;
