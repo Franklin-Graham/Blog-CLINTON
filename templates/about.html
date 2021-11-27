@@ -172,11 +172,13 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
 <!--                <button class="btn btn-primary" type="submit">send</button>-->
 <!--                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>-->
 <!--            </div>-->
+ {% if messages %}
  <script>
      function func() {
      alert("message send successfully..");
      }
  </script>
+ {% endif %}
             <div class="status"></div>
         </div>
         <!--Grid column-->
@@ -184,13 +186,13 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
         <!--Grid column-->
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
-                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
                     <p>Tamil Nadu, INDIA</p>
+                </li>
 
-
-                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
                     <p>{{i.contact_1}}</p>
-
+                </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
                     <p>clintonabrahamc@gmail.com</p>
