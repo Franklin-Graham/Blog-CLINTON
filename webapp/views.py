@@ -22,5 +22,5 @@ def message(request):
         msg = Message(username=username,user_mail=userEmail,message=message)
         msg.save()
         messages.info(request,"message send")
-        return redirect('message')
+        return redirect('/')
     return render(request,'index.html')
