@@ -101,6 +101,14 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
     <h7><i class="fab fa-whatsapp"></i> Whatsapp: {{i.whatsapp}}</h7><br><br>
     </div>
 
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name*" required><br>
+        <input type="email" name="email" placeholder="Your Email Address*" required><br>
+        <textarea name="msg" placeholder="send your message"></textarea>
+    </form>
+
     <div class="card-body card_contact">
 <h4>Lives in <i class="fas fa-globe-africa"></i></h4>
     <h7>Tamil Nadu, India</h7>
