@@ -1,6 +1,14 @@
 {% load static %}
 <div class="container text">
 <!--<h7>IT'S ME</h7> -->
+    {% if messages %}
+        {% for i in messages %}
+        <p class="messages" style="color:#9ab973;family-font:sans-serif;">
+        <div id="time">{{i}} <i style="color:#9ab973;" class="fa fa-check" aria-hidden="true"></i></div>
+        </p>
+        {% endfor %}
+        {% endif %}
+
     {% for i in object_1 %}
 <br>
 <center>
@@ -169,14 +177,15 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
             </form>
         </div>
         <!--Grid column-->
-        {% if messages %}
-        {% for i in messages %}
-        <p class="messages" style="color:#9ab973;family-font:sans-serif;">
-        <div id="time">{{i}}</div> <i style="color:#9ab973;" class="fa fa-check" aria-hidden="true"></i>
-        </p>
-        {% endfor %}
-        {% endif %}
+<!--        {% if messages %}-->
+<!--        {% for i in messages %}-->
+<!--        <p class="messages" style="color:#9ab973;family-font:sans-serif;">-->
+<!--        <div id="time">{{i}} <i style="color:#9ab973;" class="fa fa-check" aria-hidden="true"></i></div>-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+<!--        {% endif %}-->
 
+<!--    text limit time    -->
 <script type="text/javascript">
     var timePeriodInMs = 5000;
 
