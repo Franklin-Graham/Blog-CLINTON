@@ -18,6 +18,6 @@ def message(request):
         userEmail = request.POST['email']
         message = request.POST['message']
 
-        save = Message(username=username,user_mail=userEmail,message=message)
-        save.save()
-
+        msg = Message(username=username,user_mail=userEmail,message=message)
+        msg.save()
+    return render(request,'index.html')
