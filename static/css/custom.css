@@ -2,9 +2,8 @@
 body, html{
 scroll-behavior:smooth;
 overflow-x:hidden;
-background-color:#F8F8F8;
-}
-body {
+/*background-color:#F8F8F8;*/
+
      background: url(static("webapp/images/contact.jpg"));
      background-repeat: no-repeat;
      background-size: 100%;
