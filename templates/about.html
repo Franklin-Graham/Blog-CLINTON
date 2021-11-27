@@ -172,11 +172,20 @@ Download my CV(resume) here <a style="text-decoration:none;" href ="{{i.resume.u
         {% if messages %}
         {% for i in messages %}
         <p class="messages" style="color:#9ab973;family-font:sans-serif;">
-        {{i}} <i style="color:#9ab973;" class="fa fa-check" aria-hidden="true"></i>
+        <div id="time">{{i}}</div> <i style="color:#9ab973;" class="fa fa-check" aria-hidden="true"></i>
         </p>
         {% endfor %}
-
         {% endif %}
+
+<script type="text/javascript">
+    var timePeriodInMs = 5000;
+
+    setTimeout(function()
+    {
+    document.getElementById("time").style.display = "none";
+    },
+    timePeriodInMs);
+</script>
 
     <div class="card-body card_contact">
 <h4>Lives in <i class="fas fa-map-marker-alt fa-1x"></i></h4>
